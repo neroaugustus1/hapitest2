@@ -22,6 +22,7 @@
     <Content Include="package.json" />
     <Content Include="tsd.json" />
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="car.ts" />
     <TypeScriptCompile Include="data.ts" />
     <TypeScriptCompile Include="hello.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
