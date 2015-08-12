@@ -23,6 +23,7 @@
     <Content Include="tsd.json" />
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="data.ts" />
+    <TypeScriptCompile Include="hello.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <Content Include="obj\Debug\HapiTest.njsproj.FileListAbsolute.txt" />
     <TypeScriptCompile Include="typings\bluebird\bluebird.d.ts" />
