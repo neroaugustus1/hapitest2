@@ -9,6 +9,7 @@
   "author": "johan",
   "license": "ISC",
   "dependencies": {
+    "documentdb": "^1.2.0",
     "hapi": "^9.0.1"
   }
 }

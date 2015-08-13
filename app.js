@@ -1,16 +1,12 @@
-﻿
-import Hapi = require('hapi');
-import Data = require('./data/layer');
-
+var Hapi = require('hapi');
+var Data = require('./data/layer');
 var server = new Hapi.Server();
 var data = new Data.DataLayer({
     endpoint: 'https://octavia.documents.azure.com:443/',
     authKey: 'MRwildlXhqtgaI/e/YBob+CgkhmKrk3UZYt0yB0sgUUNJHDIssoX2GTIoDWUcXLgVOObjCedpg8cg/L+gbS86Q=='
 });
-
 data.init();
 server.connection({ port: 3000 });
-
 server.route({
     method: 'GET',
     path: '/',
@@ -18,7 +14,6 @@ server.route({
         reply('Hello, World!');
     }
 });
-
 server.route({
     method: 'POST',
     path: '/upload',
@@ -35,7 +30,6 @@ server.route({
         });
     }
 });
-
 server.route({
     method: 'GET',
     path: '/{name}',
@@ -43,7 +37,7 @@ server.route({
         reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
     }
 });
-
 server.start(function () {
     console.log('Server running at:', server.info.uri);
 });
+//# sourceMappingURL=app.js.map

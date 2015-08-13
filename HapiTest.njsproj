@@ -23,6 +23,7 @@
     <Content Include="tsd.json" />
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="data\layer.ts" />
+    <TypeScriptCompile Include="typings\documentdb\documentdb.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <Content Include="obj\Debug\HapiTest.njsproj.FileListAbsolute.txt" />
     <TypeScriptCompile Include="typings\bluebird\bluebird.d.ts" />
@@ -36,6 +37,7 @@
     <Folder Include="obj\Debug" />
     <Folder Include="typings" />
     <Folder Include="typings\bluebird" />
+    <Folder Include="typings\documentdb\" />
     <Folder Include="typings\hapi" />
     <Folder Include="typings\node" />
   </ItemGroup>
